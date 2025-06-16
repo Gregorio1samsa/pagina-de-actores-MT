@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+.app-header {
+  background-color: #1a237e;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Navegación */
+.app-nav {
+  background-color: #303f9f;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.app-nav button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.app-nav button:hover {
+  text-decoration: underline;
+}
+
+/* Contenido principal */
+.main-content {
+  flex: 1;
+  padding: 1rem;
+}
+
+/* Página Principal */
+.principal-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.principal-container h2 {
+  text-align: center;
+  color: #1a237e;
+}
+
+.cartillas-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.actor-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 250px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.actor-card h3 {
+  margin-top: 0;
+  color: #303f9f;
+}
+
+/* Página Películas */
+.peliculas-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.peliculas-container h2 {
+  text-align: center;
+  color: #1a237e;
+}
+
+.peliculas-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.pelicula-button {
+  background-color: #303f9f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.75rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.pelicula-button:hover {
+  background-color: #1a237e;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.modal-content h3 {
+  margin-top: 0;
+  color: #1a237e;
+}
+
+.close-button {
+  background-color: #303f9f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+/* Footer y Publicidad */
+.app-footer {
+  background-color: #1a237e;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.publicidad {
+  background-color: #ffc107;
+  color: #212121;
+  text-align: center;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cartillas-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .actor-card {
+    width: 80%;
+  }
+}
